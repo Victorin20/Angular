@@ -1,0 +1,20 @@
+
+
+<form class="myForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label for="firstName">Nom:</label>
+      <input type="text" [(ngModel)]="addUser.firstName" value="test" id="firstName" name="firstName">
+     </div>
+     <div>
+       <label for="lastName">Prenom:</label>
+       <input type="text" id="lastName" name="lastName" [(ngModel)]="addUser.lastName" required>
+     </div>
+     <div>
+       <label for="age">Age:</label>
+       <input type="number" id="age" name="age" [(ngModel)]="addUser.age" required>
+     </div>
+     <button type="submit">Submit</button>
+     
+     
+   </form>
